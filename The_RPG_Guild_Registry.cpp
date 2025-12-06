@@ -62,4 +62,6 @@ int main(){
 
     std::cout << "Battle with " << monster_name << " complete." << '\n';
     std::cout << "Final Score: " << taxed_score;
+
+    return 0;
 }
