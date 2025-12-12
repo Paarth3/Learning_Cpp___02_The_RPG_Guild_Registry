@@ -1,0 +1,20 @@
+# Concepts learnt and applied in this project
+- **Arithmetic Operators:**
+    - Basic math: `+` (add), `-` (subtract), `*` (multiply), `/` (divide).
+    - **The Modulo Operator (`%`):** Returns the _remainder_ of division (e.g., `10 % 3` is `1`).
+    - **Increment/Decrement:** `++` (add 1) and `--` (subtract 1).
+    - **Precedence:** Multiplication/Division happen before Addition/Subtraction.
+- **Type Conversion (Casting):**
+    - **Implicit:** Automatic conversion (e.g., assigning an `int` to a `double`).
+    - **Explicit:** Forcing a value to be treated as another type using `(type)value`. _Crucial for getting decimal results when dividing two integers._
+- **User Input (`std::cin`):**
+    - Using `std::cin >> variable` to grab input from the console.
+    - Using `std::getline(std::cin, variable)` to grab a whole line of text (including spaces).
+    - **The Buffer Issue:** When switching from `cin >>` (which leaves a newline character in the buffer) to `getline`, the `getline` might "skip" input.
+    - **The Fix:** Using `std::getline(std::cin >> std::ws, variable)` or `cin.ignore()`.
+- **Math Functions (`<cmath>`):**
+    - `std::max(x, y)` and `std::min(x, y)`: Find the larger or smaller value.
+    - `pow(base, exponent)`: Calculate powers (e.g., 2 to the power of 3).
+    - `sqrt(x)`: Square root.
+    - `abs(x)`: Absolute value (distance from zero).
+    - `round(x)`, `ceil(x)` (round up), `floor(x)` (round down).
